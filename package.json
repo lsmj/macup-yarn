@@ -1,6 +1,6 @@
 {
   "name": "macup-yarn",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "macup module that installs node and npm packages using yarn",
   "main": "index.js",
   "scripts": {
