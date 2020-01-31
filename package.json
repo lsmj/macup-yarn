@@ -1,0 +1,27 @@
+{
+  "name": "macup-yarn",
+  "version": "0.0.0",
+  "description": "macup module that installs node and npm modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsmj/macup-yarn.git"
+  },
+  "keywords": [
+    "macup",
+    "macup-module"
+  ],
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  },
+  "author": "LSMJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsmj/macup-yarn/issues"
+  },
+  "homepage": "https://github.com/lsmj/macup-yarn#readme"
+}
