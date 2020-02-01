@@ -8,7 +8,7 @@ function install_node_package {
 }
 
 if [ ! ${#macup_node_packages_yarn[@]} -eq 0 ]; then
-  if command -v yarn > /dev/null; then
+  if [ "$(command -v yarn)" ]; then
     for ((i=0; i<${#macup_node_packages_yarn[@]}; ++i)); do
       install_node_package "${macup_node_packages_yarn[i]}"
     done
