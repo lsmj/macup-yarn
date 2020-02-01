@@ -7,12 +7,8 @@ function install_node_package {
   yarn global add "$package"
 }
 
-function isNpmPackageInstalled() {
-  npm list --depth 1 -g "$1" > /dev/null 2>&1
-}
-
 if [ ! ${#macup_node_packages_yarn[@]} -eq 0 ]; then
-  if isNpmPackageInstalled yarn;then
+  if command -v yarn > /dev/null; then
     for ((i=0; i<${#macup_node_packages_yarn[@]}; ++i)); do
       install_node_package "${macup_node_packages_yarn[i]}"
     done
